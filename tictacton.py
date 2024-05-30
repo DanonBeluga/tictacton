@@ -1,4 +1,6 @@
 import re
+import time
+import keyboard as key
 
 class TicTacTon:
     def __init__(self):
@@ -70,3 +72,9 @@ class TicTacTon:
 
 if __name__ == "__main__":
     TicTacTon()
+    time.sleep(1)
+    print("Enterを押すと終了します。")
+    while True:
+        if key.is_pressed("Enter") == True:
+            break       
+
